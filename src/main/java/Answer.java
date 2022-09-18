@@ -62,15 +62,15 @@ public class Answer {
 
     @Override
     public String toString() {
-        return "Answer{" +
-                "copyright='" + copyright + '\'' +
-                ", date='" + date + '\'' +
-                ", explanation='" + explanation + '\'' +
-                ", hdurl='" + hdurl + '\'' +
-                ", mediaType='" + mediaType + '\'' +
-                ", serviceVersion='" + serviceVersion + '\'' +
-                ", title='" + title + '\'' +
-                ", url='" + url + '\'' +
+        return "Answer{" +  '\n' +
+                "copyright='" + copyright + "'," +'\n' +
+                " date='" + date + "'," +'\n' +
+                " explanation='" + explanation + "'," +'\n' +
+                " hdurl='" + hdurl + "'," +'\n' +
+                " mediaType='" + mediaType + "'," +'\n' +
+                " serviceVersion='" + serviceVersion + "'," +'\n' +
+                " title='" + title + "'," +'\n' +
+                " url='" + url + "'," +'\n' +
                 '}';
     }
 }

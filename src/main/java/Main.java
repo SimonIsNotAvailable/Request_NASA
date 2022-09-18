@@ -26,19 +26,12 @@ public class Main {
                 .build();
         CloseableHttpResponse response = httpClient.execute(request);
 
-        String body = new String(response.getEntity().getContent().readAllBytes(), StandardCharsets.UTF_8);
-        System.out.println(body);
+//        String body = new String(response.getEntity().getContent().readAllBytes(), StandardCharsets.UTF_8);
+//        System.out.println(body);
 
-        Answer post = mapper.readValue(response.getEntity().getContent(), new TypeReference<Answer>() {
-
+        Answer post = mapper.readValue(response.getEntity().getContent(), new TypeReference<>() {
         });
 
-//        List<Answer> posts = mapper.readValue(
-//                response.getEntity().getContent(),
-//                new TypeReference<List<Answer>>() {
-//                });
-//
-//        posts.forEach(System.out::println);
         System.out.println(post);
         httpClient.close();
     }
